@@ -1,0 +1,35 @@
+$primary-color-1: rgb(119, 192, 3);
+$primary-color-2: rgb(51, 132, 201);
+$sub-color: #666;
+$hover-bg-1: #eee;
+
+$border-1: 1px solid #ccc;
+$border-2: 2px solid rgb(51, 132, 201);
+
+.clearfix {
+  zoom: 1;
+
+  &:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+// mixins
+@mixin text-ellipsis() {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+// Animation
+.component-fade-enter-active, .component-fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.component-fade-enter, .component-fade-leave-to {
+  opacity: 0;
+}
