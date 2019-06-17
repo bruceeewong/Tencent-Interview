@@ -45,6 +45,7 @@ export default {
   min-width: 1280px;
   margin: 0 auto;
   background-color: #fff;
+  font-family: 'Microsoft YaHei';
 }
 
 .header, .main, .footer {
